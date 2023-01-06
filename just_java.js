@@ -11,5 +11,10 @@ form.addEventListener('submit', (event) => {
 function addItem(text) {
   const item = document.createElement('li');
   item.innerText = text;
-  item.addEventListener
+  item.addEventListener('click', toggleCompleted);
+  list.appendChild(item);
+}
+
+function toggleCompleted(event) {
+  event.target.classList.toggle('completed');
 }
