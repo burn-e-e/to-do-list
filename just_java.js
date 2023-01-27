@@ -1,6 +1,6 @@
-const form = document.getElementById('todo-form');
-const input = document.getElementById('todo-input');
-const list = document.getElementById('todo-list');
+const form = document.getElementById('todo_form');
+const input = document.getElementById('todo_input');
+const list = document.getElementById('todo_list');
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
